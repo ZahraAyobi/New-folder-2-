@@ -1,0 +1,121 @@
+body {
+    font-family: 'poppins', sans-serif;
+    background-color: #f5f5dc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #8b4513;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+nav a {
+    color: #daa520;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.intro, .featured-proverbs, .gallery, form {
+    padding: 1em;
+}
+.featured-proverbs, .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 1em;
+}
+.proverb-card .card {
+background-color: #fff8dc;
+border: 1px solid #daa520;
+padding: 1em;
+transition: transform 0.3sease;
+}
+.proverb-card:hover, .card:hover {
+transform: scale(1.05);
+}
+.meaning {
+display: none;
+color: #555;
+}
+.card:hover .meaning {
+display: black;
+animation: fedeln 0.5sease-in;
+}
+@keyframes fedeln {
+    form{opacity: o;}
+        to {
+            opacity: 1;
+        }
+}
+form label {
+    display: block;
+    margin: 1em 0 0.5em;
+}
+footer{
+    background-color: #b05d23;
+    color: white;
+    text-align: center;
+    padding: 1.5em;
+    margin-top: 2em;
+    font-size: 0,95em;
+}
+footer a {
+    color: #daa520;
+    text-decoration: underline;
+    margin: 0 10px;
+}
+footer .scoial-icons {
+margin: 1em 0;
+}
+nav{
+    background-color: #f3e9d0;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 1.1em;
+}
+nav a {
+    color: rgb(244, 241, 241);
+    text-decoration: none;
+    padding: 0,5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3sease;
+    background-color: #bb8965;
+}
+nav a:hover {
+    background-color: #a0522d;
+}
+.featured-proverbs, .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+}
+.back-button {
+    margin-top: 2em;
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #8b4513;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0;
+}
+.detail-image {
+    max-width: 50%;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    margin-bottom: 1em;
+}
+.detail-image {
+   max-width: 100%;
+   height: auto;
+   border-radius: 10px;
+   margin-bottom: 1em;
+   transition: transition 0.4sease;
+}
+.detail-image:hover {
+    transform: scale(1.05);
+}
